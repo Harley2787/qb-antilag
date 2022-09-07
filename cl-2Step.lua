@@ -35,7 +35,7 @@ AddEventHandler("2step:Anti-lag", function()
 
 end)
 
-Citizen.CreateThread(function()
+CreateThread(function()
     while true do
         local ped = GetPlayerPed(-1)
 		if IsControlPressed(1, Config.twoStepControl) then
@@ -110,7 +110,7 @@ Citizen.CreateThread(function()
 	end
 end)
 
-Citizen.CreateThread(function()
+CreateThread(function()
 	while true do
 		if activated == true then
 			DrawHudText("2Step", {0, 255, 85,255},0.92,0.88,0.7,0.7,6)
