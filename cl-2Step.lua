@@ -17,6 +17,7 @@ AddEventHandler("2step:Anti-lag", function()
 		local vehicleModel = GetEntityModel(GetVehiclePedIsIn(GetPlayerPed(-1)))
 		if vehicleModel == hash then
 			carAdded = true
+			break
 		else	
 			carAdded = false	
 		end
